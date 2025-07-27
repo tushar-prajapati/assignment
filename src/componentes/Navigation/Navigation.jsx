@@ -33,6 +33,8 @@ const Navigation = () => {
     setLiveSection(item);
     navigate(item.path);
   }
+
+ 
   
   return (
     <>
@@ -75,19 +77,22 @@ const Navigation = () => {
         
         <div className={` ${open? "": "hidden"} flex-1 md:flex gap-2 pt-4 md:pt-0  flex-col`}>
           {navItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className={`
-                flex visited:border-2 flex-row  ml-8 md:mx-0  md:flex-col cursor-pointer mb-4 md:mb-0 items-center gap-4 md:gap-1 py-2 px-2  transition-colors
-               ${liveSection===item? "bg-white":"hover:bg-[#273540] "}
-              `}
-              onClick={(e)=>handleClick(e, item)}
-            >
-              <span className={`text-[#2B7ABC] ${liveSection===item? "": "md:text-white"} text-3xl md:text-2xl lg:text-3xl`}>{item.icon}</span>
-              <span className={`text-[#0E68B3] ${liveSection===item? "": "md:text-white"} md:hidden lg:flex text-lg md:text-sm text-center`}>{item.name}</span>
-            
-            </Link>
+            <div key={item.name}>
+              <Link
+                to={item.path}
+                className={`
+                  flex visited:border-2 flex-row  ml-8 md:mx-0  md:flex-col cursor-pointer mb-4 md:mb-0 items-center gap-4 md:gap-1 py-2 px-2  transition-colors
+                 ${liveSection===item? "bg-white":"hover:bg-[#273540] "}
+                `}
+                onClick={(e)=>
+                  handleClick(e, item)
+                  }
+              >
+                <span className={`text-[#2B7ABC] ${liveSection===item? "": "md:text-white"} text-3xl md:text-2xl lg:text-3xl`}>{item.icon}</span>
+                <span className={`text-[#0E68B3] ${liveSection===item? "": "md:text-white"} md:hidden lg:flex text-lg md:text-sm text-center`}>{item.name}</span>
+              </Link>
+              
+            </div>
           ))}
         </div>
         
