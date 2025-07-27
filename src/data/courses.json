@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "title": "Artificial Intelligence",
+      "code": "AI1001",
+      "instructor": "Dr. A. Kumar",
+      "progress": 42
+    },
+    {
+      "id": 2,
+      "title": "Web Technologies",
+      "code": "WT2045",
+      "instructor": "Ms. Priya Mehra",
+      "progress": 78
+    },
+    {
+      "id": 3,
+      "title": "Operating Systems",
+      "code": "CS3021",
+      "instructor": "Prof. R. Sen",
+      "progress": 90
+    },
+    {
+      "id": 4,
+      "title": "Data Structures",
+      "code": "CS2030",
+      "instructor": "Dr. Neha Verma",
+      "progress": 65
+    },
+    {
+      "id": 5,
+      "title": "Cybersecurity Basics",
+      "code": "CS4071",
+      "instructor": "Mr. Vivek Sharma",
+      "progress": 50
+    },
+    {
+      "id": 6,
+      "title": "Machine Learning",
+      "code": "ML5020",
+      "instructor": "Dr. Ishita Gupta",
+      "progress": 35
+    }
+  ]
+  

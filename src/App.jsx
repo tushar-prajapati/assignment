@@ -1,8 +1,13 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Navigation from './componentes/Navigation/Navigation.jsx'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <Navigation />
+    <Outlet />
+    </>
   )
 }
 
