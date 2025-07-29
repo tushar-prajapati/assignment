@@ -29,8 +29,8 @@ const todoList = [
 
  function TodoListCard() {
   return (
-    <div className="bg-white md:mt-10 p-4 w-full max-w-sm">
-      <h2 className="text-lg text-gray-900  mb-2 border-b border-gray-300 pb-1">To Do</h2>
+    <div className="bg-white p-4 w-full max-w-sm">
+      <h2 className="text-lg text-gray-900  mb-2 border-b font-semibold border-gray-300 pb-1">To Do</h2>
 
       <ul className="space-y-3">
         {todoList.map((task, idx) => (

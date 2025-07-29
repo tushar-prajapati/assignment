@@ -21,7 +21,7 @@ const Dashboard = () => {
               ))}
             </div>
           </div>
-          <div className="lg:w-1/6 md:h-1/4">
+          <div className="lg:w-1/6 md:h-1/4 md:mt-10">
           <TodoListCard/>
           <div className="bg-white p-4 ">
       <h2 className="text-lg  text-gray-900 mb-2 border-gray-300 border-b pb-1">Recent Feedback</h2>

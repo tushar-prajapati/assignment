@@ -16,8 +16,8 @@ const navItems = [
   { name: "Dashboard", icon: <TfiDashboard />, path: "/" },
   { name: "Courses", icon: <FaBook />},
   { name: "Calendar", icon: <SlCalender />, path: "/calendar" },
-  { name: "Inbox", icon: <RiInboxArchiveLine />},
-  { name: "Help", icon: <BiHelpCircle />},
+  { name: "Inbox", icon: <RiInboxArchiveLine />, path: '/inbox'},
+  { name: "Help", icon: <BiHelpCircle />, path: '/help'},
 ];
 
 const Navigation = () => {

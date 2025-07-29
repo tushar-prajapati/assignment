@@ -7,6 +7,8 @@ import { Route, RouterProvider, createRoutesFromElements } from 'react-router'
 import CourseDetails from './pages/CourseDetails/CourseDetails.jsx'
 import Calender from './pages/Calender.jsx/Calender.jsx'
 import Dashboard from './pages/Home/Dashboard.jsx'
+import Inbox from './pages/Inbox.jsx/Inbox.jsx'
+import Help from './pages/Help/Help.jsx'
 
 
 const router = createBrowserRouter(
@@ -15,6 +17,8 @@ const router = createBrowserRouter(
       <Route path='/' element={<Dashboard />} />
       <Route path='/courses/:id' element={<CourseDetails />} />
       <Route path='/calendar' element={<Calender />} />
+      <Route path='/inbox' element={<Inbox />} />
+      <Route path='/help' element={<Help />} />
     </Route>
   )
 

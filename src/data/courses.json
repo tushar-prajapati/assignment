@@ -1,45 +1,285 @@
 [
-    {
-      "id": 1,
-      "title": "Artificial Intelligence",
-      "code": "AI1001",
-      "instructor": "Dr. A. Kumar",
-      "progress": 42
-    },
-    {
-      "id": 2,
-      "title": "Web Technologies",
-      "code": "WT2045",
-      "instructor": "Ms. Priya Mehra",
-      "progress": 78
-    },
-    {
-      "id": 3,
-      "title": "Operating Systems",
-      "code": "CS3021",
-      "instructor": "Prof. R. Sen",
-      "progress": 90
-    },
-    {
-      "id": 4,
-      "title": "Data Structures",
-      "code": "CS2030",
-      "instructor": "Dr. Neha Verma",
-      "progress": 65
-    },
-    {
-      "id": 5,
-      "title": "Cybersecurity Basics",
-      "code": "CS4071",
-      "instructor": "Mr. Vivek Sharma",
-      "progress": 50
-    },
-    {
-      "id": 6,
-      "title": "Machine Learning",
-      "code": "ML5020",
-      "instructor": "Dr. Ishita Gupta",
-      "progress": 35
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Artificial Intelligence",
+    "code": "AI1001",
+    "instructor": "Dr. A. Kumar",
+    "progress": 42,
+    "modules": [
+      {
+        "moduleNumber": 1,
+        "title": "Introduction to AI",
+        "description": "Overview of AI concepts and history.",
+        "files": [
+          { "fileNumber": 1, "name": "Syllabus.pdf", "type": "pdf", "url": "#" },
+          { "fileNumber": 2, "name": "Lecture1.mp4", "type": "video", "url": "#" },
+          { "fileNumber": 3, "name": "Intro Slides.pptx", "type": "ppt", "url": "#" }
+        ]
+      },
+      {
+        "moduleNumber": 2,
+        "title": "AI Techniques",
+        "description": "Covers search algorithms and knowledge representation.",
+        "files": [
+          { "fileNumber": 1, "name": "SearchAlgorithms.pdf", "type": "pdf", "url": "#" },
+          { "fileNumber": 2, "name": "Assignment1.docx", "type": "doc", "url": "#" }
+        ]
+      }
+    ],
+    "assignments": [
+      {
+        "title": "AI History Essay",
+        "dueDate": "2025-08-10",
+        "points": 20,
+        "submitting": ["text", "upload"],
+        "attempts": 0,
+        "allowedAttempts": 2,
+        "available": "2025-07-29"
+      },
+      {
+        "title": "Search Algorithm Implementation",
+        "dueDate": "2025-08-15",
+        "points": 30,
+        "submitting": ["file upload", "url"],
+        "attempts": 1,
+        "allowedAttempts": 3,
+        "available": "2025-07-30"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Web Technologies",
+    "code": "WT2045",
+    "instructor": "Ms. Priya Mehra",
+    "progress": 78,
+    "modules": [
+      {
+        "moduleNumber": 1,
+        "title": "HTML & CSS",
+        "description": "Basics of front-end development.",
+        "files": [
+          { "fileNumber": 1, "name": "HTMLBasics.pdf", "type": "pdf", "url": "#" },
+          { "fileNumber": 2, "name": "style-guide.css", "type": "code", "url": "#" }
+        ]
+      },
+      {
+        "moduleNumber": 2,
+        "title": "JavaScript Essentials",
+        "description": "Core JS concepts and DOM manipulation.",
+        "files": [
+          { "fileNumber": 1, "name": "script.js", "type": "code", "url": "#" },
+          { "fileNumber": 2, "name": "Quiz1.pdf", "type": "pdf", "url": "#" }
+        ]
+      }
+    ],
+    "assignments": [
+      {
+        "title": "HTML Landing Page",
+        "dueDate": "2025-08-05",
+        "points": 25,
+        "submitting": ["file upload", "url"],
+        "attempts": 0,
+        "allowedAttempts": 1,
+        "available": "2025-07-29"
+      },
+      {
+        "title": "JavaScript Quiz",
+        "dueDate": "2025-08-12",
+        "points": 15,
+        "submitting": ["text"],
+        "attempts": 1,
+        "allowedAttempts": 2,
+        "available": "2025-07-31"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Operating Systems",
+    "code": "CS3021",
+    "instructor": "Prof. R. Sen",
+    "progress": 90,
+    "modules": [
+      {
+        "moduleNumber": 1,
+        "title": "Process Management",
+        "description": "Introduction to processes and scheduling.",
+        "files": [
+          { "fileNumber": 1, "name": "ProcessNotes.pdf", "type": "pdf", "url": "#" },
+          { "fileNumber": 2, "name": "Scheduler.pptx", "type": "ppt", "url": "#" }
+        ]
+      },
+      {
+        "moduleNumber": 2,
+        "title": "Memory Management",
+        "description": "Virtual memory and paging concepts.",
+        "files": [
+          { "fileNumber": 1, "name": "PagingExample.docx", "type": "doc", "url": "#" },
+          { "fileNumber": 2, "name": "MemoryDemo.mp4", "type": "video", "url": "#" }
+        ]
+      }
+    ],
+    "assignments": [
+      {
+        "title": "CPU Scheduling Algorithms",
+        "dueDate": "2025-08-08",
+        "points": 30,
+        "submitting": ["upload"],
+        "attempts": 0,
+        "allowedAttempts": 2,
+        "available": "2025-07-30"
+      },
+      {
+        "title": "Memory Management Report",
+        "dueDate": "2025-08-16",
+        "points": 20,
+        "submitting": ["text", "file upload"],
+        "attempts": 0,
+        "allowedAttempts": 1,
+        "available": "2025-07-31"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Data Structures",
+    "code": "CS2030",
+    "instructor": "Dr. Neha Verma",
+    "progress": 65,
+    "modules": [
+      {
+        "moduleNumber": 1,
+        "title": "Arrays & Linked Lists",
+        "description": "Basic linear data structures.",
+        "files": [
+          { "fileNumber": 1, "name": "ArraysVsLists.pdf", "type": "pdf", "url": "#" },
+          { "fileNumber": 2, "name": "PracticeQs.docx", "type": "doc", "url": "#" }
+        ]
+      },
+      {
+        "moduleNumber": 2,
+        "title": "Trees & Graphs",
+        "description": "Non-linear data structures.",
+        "files": [
+          { "fileNumber": 1, "name": "BinaryTrees.pptx", "type": "ppt", "url": "#" },
+          { "fileNumber": 2, "name": "DFS_BFS_Notes.pdf", "type": "pdf", "url": "#" }
+        ]
+      }
+    ],
+    "assignments": [
+      {
+        "title": "Linked List Implementation",
+        "dueDate": "2025-08-06",
+        "points": 20,
+        "submitting": ["file upload", "url"],
+        "attempts": 1,
+        "allowedAttempts": 3,
+        "available": "2025-07-29"
+      },
+      {
+        "title": "Graph Theory Quiz",
+        "dueDate": "2025-08-14",
+        "points": 15,
+        "submitting": ["text"],
+        "attempts": 2,
+        "allowedAttempts": 2,
+        "available": "2025-07-30"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Cybersecurity Basics",
+    "code": "CS4071",
+    "instructor": "Mr. Vivek Sharma",
+    "progress": 50,
+    "modules": [
+      {
+        "moduleNumber": 1,
+        "title": "Network Security",
+        "description": "Basics of securing networks.",
+        "files": [
+          { "fileNumber": 1, "name": "Firewall.pdf", "type": "pdf", "url": "#" },
+          { "fileNumber": 2, "name": "PacketSniffing.mp4", "type": "video", "url": "#" }
+        ]
+      },
+      {
+        "moduleNumber": 2,
+        "title": "System Vulnerabilities",
+        "description": "Common vulnerabilities and mitigation.",
+        "files": [
+          { "fileNumber": 1, "name": "OWASP_Top10.pdf", "type": "pdf", "url": "#" },
+          { "fileNumber": 2, "name": "VulnScanDemo.mp4", "type": "video", "url": "#" }
+        ]
+      }
+    ],
+    "assignments": [
+      {
+        "title": "Firewall Configuration Task",
+        "dueDate": "2025-08-09",
+        "points": 25,
+        "submitting": ["file upload", "recording"],
+        "attempts": 1,
+        "allowedAttempts": 2,
+        "available": "2025-07-29"
+      },
+      {
+        "title": "Vulnerability Report",
+        "dueDate": "2025-08-18",
+        "points": 35,
+        "submitting": ["text", "file upload"],
+        "attempts": 0,
+        "allowedAttempts": 1,
+        "available": "2025-08-01"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Machine Learning",
+    "code": "ML5020",
+    "instructor": "Dr. Ishita Gupta",
+    "progress": 35,
+    "modules": [
+      {
+        "moduleNumber": 1,
+        "title": "Supervised Learning",
+        "description": "Regression and classification techniques.",
+        "files": [
+          { "fileNumber": 1, "name": "LinearRegression.pdf", "type": "pdf", "url": "#" },
+          { "fileNumber": 2, "name": "MLNotebook.ipynb", "type": "code", "url": "#" }
+        ]
+      },
+      {
+        "moduleNumber": 2,
+        "title": "Unsupervised Learning",
+        "description": "Clustering and dimensionality reduction.",
+        "files": [
+          { "fileNumber": 1, "name": "KMeansClustering.mp4", "type": "video", "url": "#" },
+          { "fileNumber": 2, "name": "PCA_Notes.pdf", "type": "pdf", "url": "#" }
+        ]
+      }
+    ],
+    "assignments": [
+      {
+        "title": "Linear Regression Task",
+        "dueDate": "2025-08-07",
+        "points": 30,
+        "submitting": ["url", "upload"],
+        "attempts": 1,
+        "allowedAttempts": 2,
+        "available": "2025-07-29"
+      },
+      {
+        "title": "Clustering Project Report",
+        "dueDate": "2025-08-17",
+        "points": 40,
+        "submitting": ["file upload", "text"],
+        "attempts": 0,
+        "allowedAttempts": 2,
+        "available": "2025-07-31"
+      }
+    ]
+  }
+]
