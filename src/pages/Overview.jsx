@@ -17,6 +17,8 @@ const Overview = ({id}) => {
   const course = courses.find((course) => String(course.id) === String(id));
 
   const [openModules, setOpenModules] = useState({});
+  const [allCollapsed, setAllCollapsed] = useState(false);
+
 
   useEffect(() => {
     if (course?.modules?.length) {
@@ -35,12 +37,14 @@ const Overview = ({id}) => {
     }));
   };
   
-  const collapseAll = () => {
-    const collapsed = {};
+  
+  const toggleAllModules = () => {
+    const newState = {};
     course.modules.forEach(mod => {
-      collapsed[mod.moduleNumber] = false;
+      newState[mod.moduleNumber] = allCollapsed; // if true → expand all (set true), if false → collapse all (set false)
     });
-    setOpenModules(collapsed);
+    setOpenModules(newState);
+    setAllCollapsed(prev => !prev); // toggle the label
   };
   
 
@@ -56,9 +60,9 @@ const Overview = ({id}) => {
             <div>
             <div className="flex w-full justify-end ">
                 <button
-                onClick={collapseAll}
+                onClick={toggleAllModules}
                 className="rounded text-lg font-light px-4 py-2 hover:bg-[#E5E9E9] transition-all duration-200 cursor-pointer bg-[#F2F4F4]">
-                    Collapse All
+                    {allCollapsed ? "Expand All" : "Collapse All"}
                 </button>
             </div>
             {/* Iterative div */}
