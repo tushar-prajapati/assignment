@@ -114,8 +114,8 @@ const CourseDetails = () => {
             </aside>
           )}
           {selectedTab == 'Overview' && <Overview id={id}/>}
-          {selectedTab == 'Assignments' && <Assignments/>}
-          {selectedTab == 'Grades' && <Grades/>}
+          {selectedTab == 'Assignments' && <Assignments id={id}/>}
+          {selectedTab == 'Grades' && <Grades id={id}/>}
           
 
 
