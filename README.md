@@ -2,6 +2,13 @@
 
 A responsive front-end UI clone inspired by Canvas Learning Management System (LMS), built with React.js and modern web technologies. This project demonstrates a fully functional dashboard and course management interface with responsive design across desktop, tablet, and mobile devices.
 
+## 🌐 Live Demo
+
+**[View Live Application](https://canvasdashboard.vercel.app/)**
+
+
+
+
 ## ✨ Features
 
 ### 🏠 Dashboard (Home Page)
